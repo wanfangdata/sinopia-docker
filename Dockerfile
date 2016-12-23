@@ -6,7 +6,7 @@ RUN apk update && apk upgrade && apk add git && adduser -D -S -s /bin/sh -h /sin
 
 USER sinopia
 
-RUN git clone --depth 1 https://github.com/rlidwka/sinopia.git  /sinopia/registry
+RUN git clone --depth 1 https://github.com/wanfangdata/sinopia.git  /sinopia/registry
 
 ADD config.yaml /sinopia/registry/config.yaml
 
